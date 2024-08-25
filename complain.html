@@ -1,0 +1,188 @@
+   
+   <!DOCTYPE html>
+   <html lang="en">
+   <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+    body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        background-color: #f5f5f5;
+    }
+    
+    /* Navigation bar styling */
+    ul {
+    list-style-type: none;
+    align-items;
+    font-size: 30px;
+  }
+
+ 
+  /* Basic navigation bar styles */
+  #navbar {
+ 
+    overflow: hidden;
+    float: right;
+  }
+
+  #navbar ul {
+    display: flex;
+  }
+  #navbar li:hover{
+    margin-top: 5px;
+    text-decoration: dashed blanchedalmond;
+  }
+
+  #navbar li {
+    margin-right: 20px;
+  }
+
+  #navbar a {
+    color: white;
+    text-decoration: none;
+  }
+  #log{
+    align-items: last baseline;
+  }
+  .navinfo{
+    margin: 0px;
+    background-image: url(./img1/water.webp);
+    image: no-repeat;
+    size: fixed;
+
+padding-bottom: 15%;
+  }
+ .navinfo p{
+    margin-right: 1000px;
+    font-size: 35px;
+    line-height: 1.33;
+    color: rgb(255, 255, 255);
+    position: relative;
+    margin-bottom: 20px;
+    margin-left: 10px;
+}
+.navinfo h1
+{  padding-top: 100px;
+    font-size: 50px;
+    color: rgb(255, 255, 255);
+    margin-left: 10px;}
+    
+    
+    #log {
+        float: right;
+    }
+    
+    /* Card styling */
+    .card__parent {
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+        padding: 20px;
+    }
+    
+    .card {
+        background-color: white;
+        border: 1px solid #ddd;
+        border-radius: 5px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        margin: 20px;
+        padding: 20px;
+        text-align: center;
+        width: 300px;
+        transition: transform 0.3s, box-shadow 0.3s;
+    }
+    
+    .card:hover {
+        transform: translateY(-10px);
+        box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    }
+    
+    .card_name {
+        font-size: 24px;
+        margin-bottom: 10px;
+    }
+    
+    /* Button styling */
+    button {
+        background-color: #007BFF;
+        border: none;
+        border-radius: 5px;
+        color: white;
+        cursor: pointer;
+        font-size: 16px;
+        padding: 10px 20px;
+        transition: background-color 0.3s, transform 0.3s;
+    }
+    
+    button:hover {
+        background-color: #0056b3;
+        transform: translateY(-3px);
+    }
+    
+    .btn1, .btn2, .btn3, .btn4 {
+        margin-top: 10px;
+    }
+    
+    /* Responsive styling */
+    @media (max-width: 768px) {
+        .card__parent {
+            flex-direction: column;
+            align-items: center;
+        }
+    
+        #navbar li {
+            float: none;
+        }
+    
+        #log {
+            float: none;
+        }
+    }
+</style>
+   </head>
+   <body>
+    
+    
+    <div class="navinfo">
+
+        <div id="navbar">
+            <ul >
+                <li><a href="#">Home</a></li>
+                <li><a href="./complain.html">Report</a></li>
+                <li><a href="./contact.html">Contact</a></li>
+                <li><a href="./about.html">About</a></li>
+                <li id="log"><a href="./login.html">Sign up/login</a></li>
+            </ul>
+        </div>
+ <div>
+    <div class="card__parent">
+        <div class="card lk">
+            <h2 class="card_name">Leakage</h2>
+            <a href="./register.html"><button class="btn1">click here</button></a>
+        </div>
+        <div class="card Co">
+            <h2 class="card_name">Contamination</h2>
+            <a href="./register.html"><button class="btn2">click here</button></a>
+
+        </div>
+
+        <div class="card sca">
+            <h2 class="card_name">Scarcity</h2>
+            <a href="./register.html"><button class="btn3">click here</button></a>
+
+        </div>
+
+        <a href="./register.html"><div class="card infra">
+            <h2 class="card_name">Infrastructure Problems</h2>
+            <a href="./register.html"><button class="btn4">click here</button></a>
+        </div></a>
+    </div>
+
+
+</div>
+</div>
+</body>
+</html>

@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8" />
+   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+   <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+   <link rel="stylesheet" href="../register.css" />
+   <style>/* Style for the entire form */
+    form {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 15px;
+      max-width: 600px;
+      margin: 0 auto;
+      padding: 20px;
+      border: 1px solid #ccc;
+      border-radius: 8px;
+      background-color: #f9f9f9;
+    }
+    
+    /* Common style for input boxes */
+    .input-box {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      margin-bottom: 15px;
+    }
+    
+    .input-box label {
+      margin-bottom: 5px;
+      font-weight: bold;
+    }
+    
+    .input-box input,
+    .input-box textarea,
+    .input-box select {
+      width: 100%;
+      padding: 10px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      font-size: 16px;
+    }
+    
+    /* Specific style for the textarea (description box) */
+    textarea[name="scarcity_description"] {
+      min-height: 100px; /* Minimum height for the textarea */
+      resize: vertical; /* Allow vertical resizing */
+    }
+    
+    /* Style for the submit button */
+    button[type="submit"] {
+      padding: 10px 20px;
+      border: none;
+      border-radius: 4px;
+      background-color: #007bff;
+      color: white;
+      font-size: 16px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+    
+    button[type="submit"]:hover {
+      background-color: #0056b3;
+    }
+    </style>
+   <title>Water Scarcity Reporting Form</title>
+</head>
+<body>
+   <section class="container">
+     <header>Water Contamination Reporting Form</header>
+     <form action="http://localhost/contamination.html" method="POST" class="form">
+       <div class="input-box">
+         <label>Reporter Name</label>
+         <input type="text" name="reporter_name" placeholder="Enter your name" required />
+       </div>
+       <div class="input-box">
+         <label>Contact Email</label>
+         <input type="email" name="contact_email" placeholder="Enter your email address" required />
+       </div>
+       <div class="input-box">
+         <label>Contact Phone Number</label>
+         <input type="tel" name="contact_phone" placeholder="Enter your phone number" required />
+       </div>
+       <div class="input-box">
+         <label>Location of Contamination</label>
+         <input type="text" name="scarcity_location" placeholder="Enter the location of scarcity" required />
+       </div>
+       <div class="input-box">
+         <label>Description of Contamination</label>
+         <textarea name="scarcity_description" placeholder="Describe the scarcity situation" required></textarea>
+       </div>
+       <div class="input-box">
+         <label>Severity of Contamination</label>
+         <select name="scarcity_severity" required>
+           <option hidden>Select severity</option>
+           <option value="low">Low</option>
+           <option value="medium">Medium</option>
+           <option value="high">High</option>
+         </select>
+       </div>
+       <div class="input-box">
+         <label>Date and Time of Contamination</label>
+         <input type="datetime-local" name="scarcity_datetime" required />
+       </div>
+       <button type="submit">Submit</button>
+     </form>
+   </section>
+</body>
+</html>

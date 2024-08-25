@@ -1,0 +1,154 @@
+ *{
+  font-family: Georgia, 'Times New Roman', Times, serif;
+ }
+ /* Reset default list styles */
+ ul {
+    list-style-type: none;
+    align-items;
+    font-size: 30px;
+  }
+
+ 
+  /* Basic navigation bar styles */
+  #navbar {
+ 
+    overflow: hidden;
+    float: right;
+  }
+
+  #navbar ul {
+    display: flex;
+  }
+  #navbar li:hover{
+    margin-top: 5px;
+    text-decoration: dashed blanchedalmond;
+  }
+
+  #navbar li {
+    margin-right: 20px;
+  }
+
+  #navbar a {
+    color: white;
+    text-decoration: none;
+  }
+  #log{
+    align-items: last baseline;
+  }
+  .navinfo{
+    margin: 0px;
+    background-image: url(./img1/water.webp);
+    image: no-repeat;
+    size: fixed;
+
+padding-bottom: 15%;
+  }
+ .navinfo p{
+    margin-right: 1000px;
+    font-size: 35px;
+    line-height: 1.33;
+    color: rgb(255, 255, 255);
+    position: relative;
+    margin-bottom: 20px;
+    margin-left: 10px;
+}
+.navinfo h1
+{  padding-top: 100px;
+    font-size: 50px;
+    color: rgb(255, 255, 255);
+    margin-left: 10px;
+}
+.un h1{
+    font-size: 50px;
+}
+.un p{
+    margin-right: 500px;
+    font-size: x-large;
+    position: relative;
+    
+color: black;
+}
+.card__parent {
+        display: flex;
+        gap: 1rem;
+        flex-wrap: wrap; 
+        justify-content: center; 
+      }
+.card_name {
+    font-size: 32px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  }
+  
+  
+
+  .card {
+    width: calc(33.33% - 1rem); /* Adjusted width for three cards in one row with a gap of 1rem */
+    padding: 16px;
+    min-height: 400px;
+    border-radius: 20px;
+
+    box-shadow: 0 5px 15px rgb(0, 0, 0, 0.06);
+    border: #d8d6d6 solid 1px;
+  }
+.sca{
+    background-image: url(./img1/sscarecity.webp );
+    background-size: cover;
+    display: flex;
+    justify-content: space-between;
+  }
+  .lk{
+    background-image: url(./img1/leakage.jpg);
+    background-size: 150px;
+    background-size: cover;
+    display: flex;
+    justify-content: space-between;
+
+  }
+  .Co{
+    background-image: url("https://wallpapercave.com/wp/wp5409990.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: space-between;
+  }
+  .infra{
+    background-image: url(./img1/download.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: space-between;
+
+  }
+  button{
+    border-radius: 25px;
+    margin-top: 10px;
+    opacity: 40%;
+    height: 10%;
+    background-color: black;
+    border: #0f0f0f solid;
+    color: aliceblue;
+  }
+.fo{
+  background-color: rgb(202, 216, 216);
+  color: #d8d6d6;
+  text-align: center;
+  height: 100px;
+  
+}
+.ico{
+  align-items: center;
+  padding-top: 20px;
+font-size: xx-large;
+text-decoration: 0;
+color: #d8d6d6;
+}
+.rep{
+  font: size 56px;
+}
+button:hover{
+  margin-top: 12px;
+  opacity:50%;
+}
+.hea p{
+  margin-top: 10px;
+}

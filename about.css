@@ -1,0 +1,88 @@
+*{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+   }
+ul {
+    list-style-type: none;
+    
+    font-size: 30px;
+  }
+
+  /* Basic navigation bar styles */
+  #navbar {
+ 
+    overflow: hidden;
+    float: right;
+    padding-right: 20px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  }
+
+  #navbar ul {
+    display: flex;
+  }
+  #navbar li:hover{
+    margin-top: 5px;
+  }
+
+  #navbar li {
+    margin-right: 20px;
+  }
+
+  #navbar a {
+    color: white;
+    text-decoration: none;
+  }
+  #log{
+    align-items: last baseline;
+  }
+  .navinfo{
+    margin: 0%;
+    background-image: url(./img/water.webp);
+    image: no-repeat;
+    size: fixed;
+
+padding-bottom: 15%;
+  }
+   .navinfo header{
+    padding-top: 100px;
+   }
+.navinfo h1
+{
+    font-size: 50px;
+    color: rgb(255, 255, 255);
+    margin-left: 10px;
+}
+.un h1{
+    font-size: 50px;
+}
+.un p{
+    margin-right: 500px;
+    font-size: x-large;
+    position: relative;
+    
+color: rgb(255, 255, 255);
+}
+
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+ color: aliceblue;
+  }
+  
+  header {
+
+  
+    text-align: center;
+  }
+  
+  .container {
+
+margin-top: 10%;
+  margin-left: 10%;
+    color: black;
+    font-size: xx-large;
+    margin-right: 5%;
+  }
+  
+  

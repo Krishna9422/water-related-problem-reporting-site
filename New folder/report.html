@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8" />
+   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+   <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+   <link rel="stylesheet" href="./register.css" />
+   <title>Water Leakage Reporting Form</title>
+</head>
+<body>
+   <section class="container">
+     <header>Water Leakage Reporting Form</header>
+     <form action="http://localhost/report_leakage.php" method="POST" class="form">
+       <div class="input-box">
+         <label>Reporter Name</label>
+         <input type="text" name="reporter_name" placeholder="Enter your name" required />
+       </div>
+       <div class="input-box">
+         <label>Contact Email</label>
+         <input type="email" name="contact_email" placeholder="Enter your email address" required />
+       </div>
+       <div class="input-box">
+         <label>Contact Phone Number</label>
+         <input type="tel" name="contact_phone" placeholder="Enter your phone number" required />
+       </div>
+       <div class="input-box">
+         <label>Location of Leakage</label>
+         <input type="text" name="leakage_location" placeholder="Enter the location of leakage" required />
+       </div>
+       <div class="input-box">
+         <label>Description of Leakage</label>
+         <textarea name="leakage_description" placeholder="Describe the leakage" required></textarea>
+       </div>
+       <div class="input-box">
+         <label>Severity of Leakage</label>
+         <select name="leakage_severity" required>
+           <option hidden>Select severity</option>
+           <option value="low">Low</option>
+           <option value="medium">Medium</option>
+           <option value="high">High</option>
+         </select>
+       </div>
+       <div class="input-box">
+         <label>Date and Time of Leakage</label>
+         <input type="datetime-local" name="leakage_datetime" required />
+       </div>
+       <button type="submit">Submit</button>
+     </form>
+   </section>
+</body>
+</html>
